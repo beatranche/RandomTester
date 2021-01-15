@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RandomTester
+comment1.params=
+comment1.target=void\ printOneRandom()
+comment2.params=numeros
+comment2.target=void\ printMultiRandom(int)
+numComments=3
