@@ -22,7 +22,7 @@ public class RandomTester
         int resultado = 0;
         resultado = aleatorio.nextInt(7);
         if (resultado == 0){
-            resultado = 1;
+            resultado += aleatorio.nextInt(7);
         }
         return resultado;
     }
@@ -46,16 +46,17 @@ public class RandomTester
         int getNumero = 0;
         getNumero = aleatorio.nextInt(max + 1);
         if (getNumero == 0){
-            getNumero = 1;
+            getNumero += aleatorio.nextInt(max + 1);
         }
         return getNumero;
     }
     
     public int getNumeroEntre(int min, int max){
         int resultado = 0;
+        int rango = max - min;
         resultado = aleatorio.nextInt(max + 1);
         if (resultado < min){
-            resultado = min;
+            resultado += aleatorio.nextInt(rango);
         }
         return resultado;
     }
