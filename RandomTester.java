@@ -21,6 +21,9 @@ public class RandomTester
     {
         int resultado = 0;
         resultado = aleatorio.nextInt(7);
+        if (resultado == 0){
+            resultado = 1;
+        }
         return resultado;
     }
     
