@@ -16,4 +16,44 @@ public class RandomTester
             index ++;
         }
     }
+    
+    public int lanzarDado()
+    {
+        int resultado = 0;
+        resultado = aleatorio.nextInt(7);
+        return resultado;
+    }
+    
+    public String getRespuesta()
+    {
+        String respuesta = "";
+        if (aleatorio.nextBoolean()){
+            respuesta = "Si";
+        }
+        else if(!aleatorio.nextBoolean()){
+            respuesta = "No";
+        }
+        else{
+            respuesta = "Tal vez";
+        }
+        return respuesta;
+    }
+    
+    public int getNumeroEntre0Y(int max){
+        int getNumero = 0;
+        getNumero = aleatorio.nextInt(max + 1);
+        if (getNumero == 0){
+            getNumero = 1;
+        }
+        return getNumero;
+    }
+    
+    public int getNumeroEntre(int min, int max){
+        int resultado = 0;
+        resultado = aleatorio.nextInt(max + 1);
+        if (resultado < min){
+            resultado = min;
+        }
+        return resultado;
+    }
 }
