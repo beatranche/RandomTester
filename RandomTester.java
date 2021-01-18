@@ -53,11 +53,7 @@ public class RandomTester
     
     public int getNumeroEntre(int min, int max){
         int resultado = 0;
-        int rango = max - min;
-        resultado = aleatorio.nextInt(max + 1);
-        if (resultado < min){
-            resultado += aleatorio.nextInt(rango);
-        }
+        resultado = min + aleatorio.nextInt(max - min);
         return resultado;
+        }
     }
-}
